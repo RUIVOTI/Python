@@ -1,15 +1,16 @@
 
-turno = (input("Digite M para manha V para boa tarde N para noite:"))
+turno = (input("Digite M para manha V para boa tarde N para noite:")).upper()
 
 
 match(turno):
     case("M"):
-        print("Bom Dia")
+        print("Bom Dia!")
 
     case("V"):
-        print("Boa Tarde")
+        print("Boa Tarde!")
 
     case("N"):
-        print("Boa Noite")
-
+        print("Boa Noite!")
+    case _:
+        print("Valor inválido!")
 
