@@ -19,5 +19,6 @@ if encontrado is False:
     print("Nao tem essa cosoante")
 
 for i in range (1,10):
-    if consoantes[i] !="u" and consoantes[i]  !="o" and consoantes[i] !="i" and consoantes[i] !="e" and consoantes[i] !="a":
+    if consoantes[i] !="u" and \
+            [i]  !="o" and consoantes[i] !="i" and consoantes[i] !="e" and consoantes[i] !="a":
         print(consoantes[i])

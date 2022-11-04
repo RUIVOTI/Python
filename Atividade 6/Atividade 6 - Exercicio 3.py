@@ -1,13 +1,13 @@
 # Casal De Coelhos
 
-def fibonacci(n):
-    if n == 1:
-        return 0
-    elif n == 2:
+def fibonacci(meses):
+    if meses >0 and meses < 3:
         return 1
     else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
+        return fibonacci(meses-1)+fibonacci(meses-2)
 
-n = 12
 
-print("“No final de um ano" ,fibonacci(n), "casais de coelhos estaram no patio")
+meses = int(input("Digite o numero de meses: "))
+for i in range (meses):
+    casal = fibonacci(i+1)
+    print("O numero de casal no mes: ", i+1, "e:",casal)
